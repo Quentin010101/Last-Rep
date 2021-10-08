@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+:root{
+    --headerColor : rgba(220,220,220, 0.8)
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* overflow: hidden;  */
+}
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 60px;
+    padding: 0 50px;
+    font-size: 1.2em;
+}
+header .logo{
+    color: var(--headerColor);
+    font-size: 1.5em;
+}
+a{
+    
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+nav ul a{
+    color: var(--headerColor);
+    margin: 0 20px;
+    font-size: 1.2em;
+}
+#aPropos{
+    height: 100vh;
+    width: 100%;
+    background-color: green;
+}
+#projet{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}
