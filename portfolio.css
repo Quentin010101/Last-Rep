@@ -13,7 +13,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    /* overflow: hidden;  */
+     overflow: hidden;  
 }
 header{
     position: fixed;
@@ -21,10 +21,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 30;
     height: 60px;
     padding: 0 50px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 header .logo{
     color: var(--headerColor);
@@ -44,13 +44,22 @@ nav ul a{
     margin: 0 20px;
     font-size: 1.2em;
 }
+#section-blanche{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: rgb(34, 33, 33);
+    z-index: -2;   /* //------------- */
+}
 #aPropos{
     height: 100vh;
     width: 100%;
-    background-color: green;
+    background-color: rgb(108, 255, 108);
+    z-index: 1;    /* //------------- */
 }
 #projet{
     height: 100vh;
     width: 100%;
     background-color: red;
+    z-index: 2;    /* //------------- */
 }
