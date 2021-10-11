@@ -25,6 +25,7 @@ header{
     height: 60px;
     padding: 0 50px;
     font-size: 1em;
+    overflow-y: visible;
 }
 header .logo{
     color: var(--headerColor);
@@ -44,22 +45,29 @@ nav ul a{
     margin: 0 20px;
     font-size: 1.2em;
 }
-#section-blanche{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background: rgb(34, 33, 33);
-    z-index: -2;   /* //------------- */
+.burger-image ion-icon{
+    font-size: 30px;
+    color: rgb(216, 216, 216);
 }
-#aPropos{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(108, 255, 108);
-    z-index: 1;    /* //------------- */
+
+
+.burger-action{
+    width: auto !important;
 }
-#projet{
-    height: 100vh;
-    width: 100%;
-    background-color: red;
-    z-index: 2;    /* //------------- */
+
+@media  (max-width: 1000px){
+    nav{
+        position: absolute;
+        right: 0;
+        top:0;
+        height: 100vh;
+        z-index: 100;
+        border: solid;
+        overflow-x: hidden;
+        width: 0;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -1,31 +1,19 @@
-// import {disolveShape}  from './portfolio.js'
+//--------------------------------------------
+//   Burger
+//--------------------------------------------
+
+const nav = document.querySelector('nav')
+const ul = document.querySelector('nav ul')
+const burger = document.querySelector('.burger-image')
 
 
-const sectionBlanche = document.querySelector('#section-blanche')
-const sectionAPropos = document.querySelector('#aPropos')
-const sectionProjet = document.querySelector('#projet')
-let arrSection = [sectionBlanche,sectionAPropos,sectionProjet]
-window.addEventListener('wheel', function(e){
-    // disolveShape()
-/*    let currentPosition = document.documentElement.scrollTop
-    console.log(currentPosition)
-    for(let i = 0; i< arrSection.length; i++){
-        if(currentPosition <= arrSection[i].offsetTop){
-            if(e.deltaY > 0){
-                if(i> arrSection.length - 2) {return}
-                return scrollTo(0, arrSection[i + 1].offsetTop)
-            } else {
-                if(i==0) { return}
-                return scrollTo(0, arrSection[i - 1].offsetTop)
-            }
-        }
-    } 
-*/ 
-
-
-
-
+burger.addEventListener(function(){
+    nav.classList.add('burger-action')
 })
 
-
-
+// window.addEventListener('resize', function(){
+//     if(window.matchMedia("(max-width:1000px)").matches){
+//         nav.classList.add('nav-burger')
+//         ul.classList.add('ul-burger')
+//     }
+// })
