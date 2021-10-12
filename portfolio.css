@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
 }
 :root{
     --headerColor : rgba(220,220,220, 0.8)
@@ -42,32 +42,56 @@ nav ul{
 }
 nav ul a{
     color: var(--headerColor);
-    margin: 0 20px;
+    margin: 200px 20px;
     font-size: 1.2em;
 }
-.burger-image ion-icon{
+.burger-image, .cross-image{
+    display: none;
+}
+.burger-image ion-icon, .cross-image ion-icon{
     font-size: 30px;
     color: rgb(216, 216, 216);
+    cursor: pointer;
 }
 
-
 .burger-action{
-    width: auto !important;
+    max-width: 400px !important;
 }
 
 @media  (max-width: 1000px){
+    *{
+        font-size: 0.95em;
+    }
     nav{
         position: absolute;
         right: 0;
         top:0;
         height: 100vh;
         z-index: 100;
-        border: solid;
         overflow-x: hidden;
-        width: 0;
+        max-width: 0;
+        background: rgba(220,220,220,0.2);
+        transition: max-width 0.5s ease-in;
     }
-    ul{
+    nav ul{
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+    }
+    nav ul li a{
+        z-index: 1;
+    }
+    nav ul li{
+        margin: 0.8em 2em;
+    }
+    .burger-image, .cross-image{
+        display: block;
+    }
+}
+@media  (max-width: 600px){
+    *{
+        font-size: 0.9em;
     }
 }

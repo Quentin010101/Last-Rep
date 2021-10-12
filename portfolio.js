@@ -18,9 +18,9 @@
  let arrLien = ["https://codepen.io/QuentinAfpa/pen/PomvEpd",,]
 
  // lien accueil
- const lien1 = document.querySelector('nav li:nth-child(1)')
- const lien2 = document.querySelector('nav li:nth-child(2)')
- const lien3 = document.querySelector('nav li:nth-child(3)')
+ const lien1 = document.querySelector('nav li:nth-child(2)')
+ const lien2 = document.querySelector('nav li:nth-child(3)')
+ const lien3 = document.querySelector('nav li:nth-child(4)')
  
  const textShapeContainer = document.createElement('div')
  const textShape = document.createElement('p')
@@ -86,11 +86,11 @@ function titrePageAcceuil(){
     titre.innerText = "En formation Développeur Web"
     containerPageAcceuil.appendChild(titre)  
    setTimeout(function(){  
-       titrePageAcceuil_moveLeft(50, 0.8)     
+       titrePageAcceuil_moveLeft(35, 0.8)     
    },1000)
 }
 function titrePageAcceuil_moveLeft(coordonneX, timeParm){
-    containerPageAcceuil.style.left = coordonneX +"%"
+    containerPageAcceuil.style.left = coordonneX + "%"
     containerPageAcceuil.style.opacity = "0.9"
     containerPageAcceuil.style.transition = "all "+ timeParm +"s ease-in"
 }
